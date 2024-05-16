@@ -34,3 +34,7 @@ $ roslaunch gmapping gmapping.launch
 ......[process-started] Node launched
 ```
 ![slam](https://user-images.githubusercontent.com/56990337/122931433-84afe680-d38a-11eb-82b4-67c0014d80a3.gif)
+
+
+
+Proceed to the [Basics](Basics.md)
