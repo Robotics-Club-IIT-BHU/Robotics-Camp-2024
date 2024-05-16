@@ -121,4 +121,4 @@ started core service [/rosout]
 
 If this shows in your terminal, then you are good to go.
 
-Proceed to [TurtleBot.md](TurtleBot.md) 
+Proceed to [TurtleSim.md](TurtleSim.md) 
