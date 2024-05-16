@@ -1,4 +1,4 @@
-<h1>Robotics-Summer-Camp 2024</h1> 
+<p align="center"> <h1>Robotics-Summer-Camp 2024</h1> </p>
 
 Hope you all have completed the ROS installation. And are familiar with what a workspace is and how to source your workspace. If not view [Week 0](https://github.com/Robotics-Club-IIT-BHU/Robotics-Camp-2024/tree/week-1/Robo_Summer_camp_24-Week0) of summer camp!
 
