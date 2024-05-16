@@ -2,38 +2,32 @@
 
 Hope you all have completed the ROS installation. And are familiar with what a workspace is and how to source your workspace. If not view [Week 0](https://github.com/Robotics-Club-IIT-BHU/Robotics-Camp-2024/tree/week-1/Robo_Summer_camp_24-Week0) of summer camp!
 
-## Lets create your first package
-To create your package first navigate to the workspace that you have created.
-**Note:** If you named you workspace something other that catkin_ws then be sure to replace the name of your workspace.
+## What are Nodes
+A node really isn't much more than an executable file within a ROS package. ROS nodes use a ROS client library to communicate with other nodes. Nodes can publish or subscribe to a Topic. Nodes can also provide or use a Service. 
+<br></br>
+#### What does a Node do then?
 
-```
-cd ~/catkin_ws/src
-```
-This command is used to create a catkin package.
-```
-catkin_create_pkg $Your_pkg_name std_msgs rospy roscpp  # remember to replace the name to what_ever name you want
-```
-std_msgs, rospy and roscpp are all dependencies.
+A node is a process that performs computation. Nodes are combined together into a graph and communicate with one another using streaming topics.
 
-Now that you defined your package, you have to build it using catkin build, make sure that your working dir is you workspace.
-```
-cd ~/catkin_ws
-catkin build
-```
+<img src="ros101.png">
+<br></br>
+A robot control system will usually comprise many nodes. For example, one node controls a laser range-finder, one Node controls the robot's wheel motors, one node performs localization, one node performs path planning, one node provides a graphical view of the system, and so on. 
 
-If there were no errors, Congrats you have successfully build the pkg, if not then it is debug time.
-<img src="Robo_Summer_camp_24-Week1/assests/serious.gif"/>
+For more info visit [Node](http://wiki.ros.org/Nodes)
 
-This is the general directry structure of workspace.
+
+## Topics 
+
+Topics are named buses over which nodes exchange messages. Topics have anonymous publish/subscribe semantics, which decouples the production of information from its consumption. In general, nodes are not aware of who they are communicating with. Instead, nodes that are interested in data subscribe to the relevant topic; nodes that generate data publish to the relevant topic. There can be multiple publishers and subscribers to a topic. 
+
+<img src="ros_master_communication_topics.png">
+
+You can see all the topics that are running with the command
 ```
-workspace_folder/        -- WORKSPACE
-  src/                   -- SOURCE SPACE
-    CMakeLists.txt       -- 'Toplevel' CMake file, provided by catkin
-    package_1/
-      CMakeLists.txt     -- CMakeLists.txt file for package_1
-      package.xml        -- Package manifest for package_1
-    ...
-    package_n/
-      CMakeLists.txt     -- CMakeLists.txt file for package_n
-      package.xml        -- Package manifest for package_n
+rostopic list
+``` 
+
+And you see what is being published to that topic by the cmd 
+```
+rostopic echo /topic_name
 ```
