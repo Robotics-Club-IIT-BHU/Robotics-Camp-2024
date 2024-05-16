@@ -39,3 +39,8 @@ Bags are typically created by a tool like rosbag, which subscribe to one or more
 Using bag files within a ROS Computation Graph is generally no different from having ROS nodes send the same data. 
 
 In a nutshell bags are a form to store everything happening in a robot. And can be used for future data analysis.
+
+
+**The complete communication between nodes via topics and service calls etc. looks like this**
+
+<img src="Nodes-TopicandService.gif">
