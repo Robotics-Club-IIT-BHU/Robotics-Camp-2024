@@ -22,7 +22,7 @@ catkin build
 ```
 
 If there were no errors, Congrats you have successfully build the pkg, if not then it is debug time.
-![DebugTime](Robo_Summer_camp_24-Week1/assests/serious.gif)
+<img src="Robo_Summer_camp_24-Week1/assests/serious.gif"/>
 
 This is the general directry structure of workspace.
 ```
