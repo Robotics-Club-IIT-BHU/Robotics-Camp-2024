@@ -8,10 +8,10 @@ A node really isn't much more than an executable file within a ROS package. ROS 
 #### What does a Node do then?
 
 A node is a process that performs computation. Nodes are combined together into a graph and communicate with one another using streaming topics.
-
+<p align="center">
 <div style="text-align: center;">
     <img src="ros101.png" alt="ROS 101">
-</div>
+</div></p>
 <p></p>
 <p></p>
 A robot control system will usually comprise many nodes. For example, one node controls a laser range-finder, one Node controls the robot's wheel motors, one node performs localization, one node performs path planning, one node provides a graphical view of the system, and so on. 
@@ -22,10 +22,10 @@ For more info visit [Node](http://wiki.ros.org/Nodes)
 ## Topics 
 
 Topics are named buses over which nodes exchange messages. Topics have anonymous publish/subscribe semantics, which decouples the production of information from its consumption. In general, nodes are not aware of who they are communicating with. Instead, nodes that are interested in data subscribe to the relevant topic; nodes that generate data publish to the relevant topic. There can be multiple publishers and subscribers to a topic. 
-
+<p align="center">
 <div style="text-align: center;">
     <img src="ros_master_communication_topics.png" alt="ROS Master Communication Topics">
-</div>
+</div></p>
 
 You can see all the topics that are running with the command
 ```
@@ -48,6 +48,6 @@ In a nutshell bags are a form to store everything happening in a robot. And can 
 
 ### **The complete communication between nodes via topics and service calls etc. looks like this**
 
-<div style="text-align: center;">
+<p align="center"><div style="text-align: center;">
     <img src="Nodes-TopicandService.gif" alt="Nodes, Topics, and Services">
-</div>
+</div></p>
