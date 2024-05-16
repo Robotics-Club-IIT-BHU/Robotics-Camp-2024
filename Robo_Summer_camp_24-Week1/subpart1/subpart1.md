@@ -1,8 +1,8 @@
 <p align="center"><img src="https://answers.ros.org/upfiles/14554624266871161.png" width="60" height="60"> <b>R</b>obotic<b>O</b>perating<b>S</b>ystem 
 
-<h1>ROS-SummerCamp</h1> </p>
+<h1>Robotics-Summer-Camp 2024</h1> </p>
 
-Welcome to the week1 of SummerCamp24 offered by Robotics Club, IIT(BHU) Varanasi. We Aim to deliver a Beginner Level of Understanding to ROS to get you started with projects with it.
+Welcome to the week 1 of SummerCamp24 offered by Robotics Club, IIT(BHU) Varanasi. We Aim to deliver a Beginner Level of Understanding to ROS to get you started with projects with it.
 
 In this section we plan to Teach you the basics of ROS Nodes, Topics, and services. 
 
