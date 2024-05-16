@@ -2,7 +2,7 @@
 
 Hope you all have completed the ROS installation. And are familiar with what a workspace is and how to source your workspace. If not view [Week 0](https://github.com/Robotics-Club-IIT-BHU/Robotics-Camp-2024/tree/week-1/Robo_Summer_camp_24-Week0) of summer camp!
 
-## What are Nodes
+## Nodes
 A node really isn't much more than an executable file within a ROS package. ROS nodes use a ROS client library to communicate with other nodes. Nodes can publish or subscribe to a Topic. Nodes can also provide or use a Service. 
 <br></br>
 #### What does a Node do then?
@@ -31,3 +31,11 @@ And you see what is being published to that topic by the cmd
 ```
 rostopic echo /topic_name
 ```
+
+## ROSBag
+
+Bags are typically created by a tool like rosbag, which subscribe to one or more ROS topics, and store the serialized message data in a file as it is received. These bag files can also be played back in ROS to the same topics they were recorded from, or even remapped to new topics.
+
+Using bag files within a ROS Computation Graph is generally no different from having ROS nodes send the same data. 
+
+In a nutshell bags are a form to store everything happening in a robot. And can be used for future data analysis.
