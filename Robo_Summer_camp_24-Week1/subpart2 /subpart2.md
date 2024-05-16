@@ -24,8 +24,8 @@ If there were no errors, Congrats you have successfully build the pkg, if not th
 <img src="serious.gif"/>
 
 This is the general directry structure of workspace.
-
->workspace_folder/        -- WORKSPACE
+```
+workspace_folder/        -- WORKSPACE
   src/                   -- SOURCE SPACE
     CMakeLists.txt       -- 'Toplevel' CMake file, provided by catkin
     package_1/
@@ -35,3 +35,4 @@ This is the general directry structure of workspace.
     package_n/
       CMakeLists.txt     -- CMakeLists.txt file for package_n
       package.xml        -- Package manifest for package_n
+```
