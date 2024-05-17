@@ -33,6 +33,7 @@ More information can be found [here](https://wiki.ros.org/ROS/Tutorials/Creating
 Submit a video of your publisher and subscriber working together, with the code written in Python. You will have to develop the habit of reading documentation and following [this tutorial](https://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) is a good starting point. The message published has to be of the format "Communication is working smoothly! Ping no. %d", where %d is an integer incremented by 1 every ping.
 
 ## Task 1b (Bonus)
-Perform Task 1 but with the nodes written in C++ this time and submit a video of their working.
+Perform Task 1 but with the nodes written in C++ this time and submit a video of their working. 
+[Related tutorial](https://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29)
 
 *Tip*: For video submissions, you can use OBS Studio
