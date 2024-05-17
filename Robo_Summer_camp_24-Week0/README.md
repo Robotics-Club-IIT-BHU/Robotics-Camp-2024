@@ -22,7 +22,7 @@ ROS uses workspaces that help you manage different packages without conflicting 
 **Commands to run in terminal:**
 
 ```bash
-mkdir -p /catkin ws/src
+mkdir -p /catkin_ws/src
 
 cd catkin_ws/src/
 
@@ -30,7 +30,7 @@ catkin_init_workspace
 
 sudo apt-get install python3-catkin-tools
 
-cd /catkin ws/
+cd /catkin_ws/
 
 catkin build
 
