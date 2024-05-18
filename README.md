@@ -31,6 +31,9 @@ A leaderboard will track participants' progress and achievements throughout the 
 - Insights and techniques of CnD.
 
 ### Week 4: Introduction to Neural Networks 🧠
+- Introduction to neural network (feed-forward method, backpropagation, optimization methods)
+- Computer vision for object tracking and object detection.
+- Application fo Computer Vision
 
 ## Specializations:
   - **Controls and Dynamics Specialization**:
