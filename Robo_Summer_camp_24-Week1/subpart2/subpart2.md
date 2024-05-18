@@ -101,3 +101,5 @@ For an additional challenge, implement the publisher and subscriber nodes in C++
 - Ensure the video clearly shows the terminal outputs and the functioning of both nodes.
 
 We hope you find these tasks both challenging and rewarding. Good luck, and have fun exploring ROS!
+
+[Proceed](/Robo_Summer_camp_24-Week1/subpart3/subpart3.md)

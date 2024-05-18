@@ -97,6 +97,6 @@ Now launch the file
 ~/catkin_ws $ roslaunch gazebo_demo fire_up.launch
 ```
 
-
-
 You can see gazebo window and a bot spawned in it.
+
+[Proceed](/Robo_Summer_camp_24-Week1/subpart3/turtlebot3.md)

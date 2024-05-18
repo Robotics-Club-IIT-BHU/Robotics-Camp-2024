@@ -138,3 +138,5 @@ This will be very important tool to quickly analyse your robot and the way it is
 ---
 
 ## Always Refer Google Or Roswiki for any confusion, The are the best resources for Learning
+
+Proceed to [Subpart 2](/Robo_Summer_camp_24-Week1/subpart2/subpart2.md)
