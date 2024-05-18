@@ -120,3 +120,10 @@ to identify the Topic which is responsible for movement of turtlebot
 rostopic pub /cmd_vel geometry_msgs/Twist '{linear: {x: 0.1, y: 0, z: 0}, angular: {x: 0, y: 0, z: 0.1}}'
 ```
 
+## Task3 (Bonus) - Load the TurtleBot into a custom world
+
+Download the file [robo.world](google.com) from this directory
+
+Create a new package with the necessary dependencies for TurleBot3 and Gazebo, and place the world inside this package. Now create a launch file to load this world in Gazebo. Submit a screen recording of a TurtleBot model spwaned inside this world.
+
+It is suggested to poke around in the TurtleBot3 packages for figuring out how to proceed.
