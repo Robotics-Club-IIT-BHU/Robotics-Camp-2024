@@ -59,6 +59,10 @@ rospack find beginner_tutorials
 
 For more information on creating packages, you can visit the [official ROS tutorial](https://wiki.ros.org/ROS/Tutorials/CreatingPackage).
 
+<p align="center"> 
+  <img width=500 src="https://media4.giphy.com/media/Pmv6m86yGQCjkLjmqx/200w.webp?cid=ecf05e477vg6ag0kor6o01v5bm1ezzuxs27qo5i1rawpcv44&rid=200w.webp&ct=g">
+</p>
+
 ## Task 1: Python Publisher and Subscriber
 
 Your first task is to create a publisher and a subscriber node in Python. These nodes will communicate by sending and receiving messages.
@@ -101,5 +105,6 @@ For an additional challenge, implement the publisher and subscriber nodes in C++
 - Ensure the video clearly shows the terminal outputs and the functioning of both nodes.
 
 We hope you find these tasks both challenging and rewarding. Good luck, and have fun exploring ROS!
+
 
 [Proceed](/Robo_Summer_camp_24-Week1/subpart3/subpart3.md)
