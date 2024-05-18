@@ -122,8 +122,8 @@ rostopic pub /cmd_vel geometry_msgs/Twist '{linear: {x: 0.1, y: 0, z: 0}, angula
 
 ## Task3 (Bonus) - Load the TurtleBot into a custom world
 
-Download the file [robo.world](https://github.com/Robotics-Club-IIT-BHU/Robotics-Camp-2024/blob/week-1/Robo_Summer_camp_24-Week1/subpart3/robo.world) from this directory
+Download the file [robo.world](https://github.com/Robotics-Club-IIT-BHU/Robotics-Camp-2024/blob/week-1/Robo_Summer_camp_24-Week1/subpart3/robo.world) from this directory.
 
-Create a new package with the necessary dependencies for TurleBot3 and Gazebo, and place the world inside this package. Now create a launch file to load this world in Gazebo. Submit a screen recording of a TurtleBot model spwaned inside this world.
+Create a new package with the necessary dependencies for TurleBot3 and Gazebo, and place the world file inside this package. Now create a launch file to load this world in Gazebo. Submit a screen recording of a TurtleBot model spwaned inside this world.
 
 It is suggested to poke around in the TurtleBot3 packages for figuring out how to proceed.
