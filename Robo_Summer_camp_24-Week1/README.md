@@ -8,6 +8,15 @@ If you have installed ubuntu and ROS the proceed to [SubPart1](subpart1/subpart1
 
 <center>
  <table>
+  <td align="center">
+     <a href="https://github.com/sdhar04">
+     <img src="https://avatars.githubusercontent.com/u/126956357?v=4" width="100px;" alt=""/>
+       <br>
+       <sub><b>Sammit Dhar</b></sub>
+     </a>
+     <br>
+  </td>
+
    
    <td align="center">
      <a href="https://github.com/ShashwatPatil">
@@ -18,14 +27,7 @@ If you have installed ubuntu and ROS the proceed to [SubPart1](subpart1/subpart1
      <br>
   </td>
    
-  <td align="center">
-     <a href="https://github.com/sdhar04">
-     <img src="https://avatars.githubusercontent.com/u/126956357?v=4" width="100px;" alt=""/>
-       <br>
-       <sub><b>Sammit Dhar</b></sub>
-     </a>
-     <br>
-  </td> 
+ 
   
     
  </table>
