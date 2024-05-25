@@ -21,9 +21,10 @@ A leaderboard will track participants' progress and achievements throughout the 
 
 ### Week 2: URDF / CAD 🏗️
 
-- Introduction to URDF file format and Fusion360.
-- Designing a bot with joints and converting it to URDF.
-- Launching designs using RViz and Gazebo.
+- Defining the Robot: Movement and Computation.
+- Building the blueprint using URDF
+- Introduction to CAD using Fusion 360
+- Converting the CAD model to URDF
 
 ### Week 3: Controls and Dynamics ⚙️
 
