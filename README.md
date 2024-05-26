@@ -34,12 +34,15 @@ A leaderboard will track participants' progress and achievements throughout the 
 ### Week 4: Introduction to Neural Networks 🧠
 - Introduction to neural network (feed-forward method, backpropagation, optimization methods)
 - Computer vision for object tracking and object detection.
-- Application fo Computer Vision
+- Application of Computer Vision
 
 ## Specializations:
   - **Controls and Dynamics Specialization**:
     - Reinforcement Learning (RL)
     - Model Predictive Control (MPC)
+  - **Robotics Design and Optimisation**
+    - Advanced Concepts in Designing.
+    - Simple Control application in Gazebo Simulations.
   - **Computer Vision Specialization**:
     - Key concepts and applications.
   - **ROS Specialization**:
