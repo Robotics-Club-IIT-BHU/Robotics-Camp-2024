@@ -63,143 +63,24 @@ Typically the behavior of a non-linear system is described as a set of simultane
 
 We will deal with dynamical systems that are modeled by a finite number of coupled first order ordinary differential equations
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" allign='centre'>
-  <mi>x</mi>
-  <msub>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mo>&#x307;</mo>
-    </mrow>
-    <mn>1</mn>
-  </msub>
-  <mo>=</mo>
-  <msub>
-    <mi>f</mi>
-    <mn>1</mn>
-  </msub>
-  <mo stretchy="false">(</mo>
-  <mi>t</mi>
-  <mo>,</mo>
-  <msub>
-    <mi>x</mi>
-    <mn>1</mn>
-  </msub>
-  <mo>,</mo>
-  <mo>&#x2026;</mo>
-  <mo>&#x2026;</mo>
-  <mo>,</mo>
-  <msub>
-    <mi>x</mi>
-    <mi>n</mi>
-  </msub>
-  <mo>,</mo>
-  <msub>
-    <mi>u</mi>
-    <mn>1</mn>
-  </msub>
-  <mo>,</mo>
-  <mo>&#x2026;</mo>
-  <mo>&#x2026;</mo>
-  <mo>,</mo>
-  <msub>
-    <mi>u</mi>
-    <mi>p</mi>
-  </msub>
-  <mo stretchy="false">)</mo>
-</math>
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mi>x</mi>
-  <msub>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mo>&#x307;</mo>
-    </mrow>
-    <mn>2</mn>
-  </msub>
-  <mo>=</mo>
-  <msub>
-    <mi>f</mi>
-    <mn>2</mn>
-  </msub>
-  <mo stretchy="false">(</mo>
-  <mi>t</mi>
-  <mo>,</mo>
-  <msub>
-    <mi>x</mi>
-    <mn>1</mn>
-  </msub>
-  <mo>,</mo>
-  <mo>&#x2026;</mo>
-  <mo>&#x2026;</mo>
-  <mo>,</mo>
-  <msub>
-    <mi>x</mi>
-    <mi>n</mi>
-  </msub>
-  <mo>,</mo>
-  <msub>
-    <mi>u</mi>
-    <mn>1</mn>
-  </msub>
-  <mo>,</mo>
-  <mo>&#x2026;</mo>
-  <mo>&#x2026;</mo>
-  <mo>,</mo>
-  <msub>
-    <mi>u</mi>
-    <mi>p</mi>
-  </msub>
-  <mo stretchy="false">)</mo>
-</math>
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mo>.</mo>
-  <mo>.</mo>
-</math>
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mo>.</mo>
-  <mo>.</mo>
-</math>
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mi>x</mi>
-  <msub>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mo>&#x307;</mo>
-    </mrow>
-    <mi>n</mi>
-  </msub>
-  <mo>=</mo>
-  <msub>
-    <mi>f</mi>
-    <mi>n</mi>
-  </msub>
-  <mo stretchy="false">(</mo>
-  <mi>t</mi>
-  <mo>,</mo>
-  <msub>
-    <mi>x</mi>
-    <mn>1</mn>
-  </msub>
-  <mo>,</mo>
-  <mo>&#x2026;</mo>
-  <mo>&#x2026;</mo>
-  <mo>,</mo>
-  <msub>
-    <mi>x</mi>
-    <mi>n</mi>
-  </msub>
-  <mo>,</mo>
-  <msub>
-    <mi>u</mi>
-    <mn>1</mn>
-  </msub>
-  <mo>,</mo>
-  <mo>&#x2026;</mo>
-  <mo>&#x2026;</mo>
-  <mo>,</mo>
-  <msub>
-    <mi>u</mi>
-    <mi>p</mi>
-  </msub>
-  <mo stretchy="false">)</mo>
-</math>
+### Equations
+
+$$
+\dot{x}_1 = f_1(t, x_1, \ldots, x_n, u_1, \ldots, u_p)
+$$
+$$
+\dot{x}_2 = f_2(t, x_1, \ldots, x_n, u_1, \ldots, u_p)
+$$
+
+$$
+\vdots
+$$
+
+$$
+\dot{x}_n = f_n(t, x_1, \ldots, x_n, u_1, \ldots, u_p)
+$$
+
+
 Here ẋ₁, ẋ₂,…ẋₙ denote the derivative of x₁, x₂…xₙ respectively with respect to time variable t and u₁, u₂,… uₚ etc are specified input variables. We call the variables x₁, x₂, …xₙ the state variables.
 
 State Variables are used to to represent the memory the dynamical system has of its past or the desired variable of interest. We usually use vector notation to write these equations in a compact form.
@@ -208,22 +89,8 @@ State Variables are used to to represent the memory the dynamical system has of 
 
 We can rewrite the n first-order differential equations as one n-dimensional first-order vector differential equation
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mi>x</mi>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mo>&#x307;</mo>
-  </mrow>
-  <mo>=</mo>
-  <mi>f</mi>
-  <mo stretchy="false">(</mo>
-  <mi>t</mi>
-  <mo>,</mo>
-  <mi>x</mi>
-  <mo>,</mo>
-  <mi>u</mi>
-  <mo stretchy="false">)</mo>
-</math>
-
-We call above equation as the State Equation of the system and refer to x as the state and u as the input.
+$$
+\dot{x} = f(t, x, u)
+$$
 
 
