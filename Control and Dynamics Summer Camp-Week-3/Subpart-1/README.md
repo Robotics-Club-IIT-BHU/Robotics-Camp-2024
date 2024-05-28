@@ -63,7 +63,7 @@ Typically the behavior of a non-linear system is described as a set of simultane
 
 We will deal with dynamical systems that are modeled by a finite number of coupled first order ordinary differential equations
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" allign='centre'>
   <mi>x</mi>
   <msub>
     <mrow class="MJX-TeXAtom-ORD">
