@@ -413,7 +413,7 @@ In control engineering, a state-space representation is a mathematical model of 
 
 The state space equations for a linear time invariant system (LTI) system can be given as follows:
 <p align = "center">
-<img width = "1000" height = "60" src = "eqns/ssm.png">
+<img width = "500" height = "60" src = "eqns/ssm.png">
 <p align = "center">
 
 Here
@@ -438,12 +438,12 @@ We won’t go into the theory of how these equations came into being. That’s a
 
 Consider a set of equations:
 <p align = "center">
-<img width = "1000" height = "60" src = "eqns/ssm2.png">
+<img width = "500" height = "60" src = "eqns/ssm2.png">
 <p align = "center">
 
 We want to express this set of equations into the form
 <p align = "center">
-<img width = "1000" height = "60" src = "eqns/ssm3.png">
+<img width = "500" height = "60" src = "eqns/ssm3.png">
 <p align = "center">
 
 Notice, we have neglected the Bu term in this equation. That’s because our system doesn’t have any input. It only has state variables x₁ and x₂.
@@ -468,13 +468,13 @@ How do we linearize (1)? That was basically the whole point of previous Task.
 
     The jacobian J for the system of equations (3) will be:
     <p align = "center">
-    <img width = "1500" height = "180" src = "eqns/ssm5.png">
+    <img width = "500" height = "180" src = "eqns/ssm5.png">
     <p align = "center">
 3.  <b>Construct the state equation for each equilibrium point.</b>
 
     The state equation for equilibrium point (0,0) will be:
     <p align = "center">
-    <img width = "1800" height = "180" src = "eqns/ssm6.png">
+    <img width = "500" height = "180" src = "eqns/ssm6.png">
     <p align = "center">
 
     Therefore the set of equations has been expressed in the form:
@@ -489,7 +489,7 @@ How do we linearize (1)? That was basically the whole point of previous Task.
 
     Likewise, the state equations for equilibrium points (1,√2) and (1,-√2) are:
     <p align = "center">
-    <img width = "1800" height = "180" src = "eqns/ssm8.png">
+    <img width = "500" height = "180" src = "eqns/ssm8.png">
     <p align = "center">
 
 ### Stability
@@ -504,7 +504,7 @@ Let us consider the Pendulum with external applied torque system.
 
 We derived the equations for this system as:
 <p align = "center">
-    <img width = "1000" height = "90" src = "eqns/st1.png">
+    <img width = "500" height = "90" src = "eqns/st1.png">
     <p align = "center">
 
 We can apply the same linearization technique explained above.
@@ -523,32 +523,32 @@ We can apply the same linearization technique explained above.
 
     The jacobian J₁ for the A matrix of the state equation will be:
     <p align = "center">
-    <img width = "1800" height = "200" src = "eqns/st2.png">
+    <img width = "500" height = "200" src = "eqns/st2.png">
     <p align = "center">
 
     Since our system has input, we also need to calculate jacobian J₂ for the B matrix.
 
     J₂ will be:
     <p align = "center">
-    <img width = "1800" height = "200" src = "eqns/st3.png">
+    <img width = "500" height = "200" src = "eqns/st3.png">
     <p align = "center">
 3. <b> For each equilibrium point, substitute value of (x₁,x₂) in the jacobian and calculate the A and B matrix.</b>
 
     The values of A matrix for each equilibrium point will be given as:
     <p align = "center">
-    <img width = "1800" height = "100" src = "eqns/st4.png">
+    <img width = "500" height = "100" src = "eqns/st4.png">
     <p align = "center">
 
     The values of B matrix for all equilibrium points will be:
     <p align = "center">
-    <img width = "1800" height = "80" src = "eqns/st5.png">
+    <img width = "500" height = "80" src = "eqns/st5.png">
     <p align = "center">
 
 4. <b>Construct the state equation for each equilibrium point.</b>
 
     The state equation for equilibrium point (0,0) will be:
     <p align = "center">
-    <img width = "1000" height = "100" src = "eqns/st6.png">
+    <img width = "500" height = "100" src = "eqns/st6.png">
     <p align = "center">
 
 5. <b>Check the stability of the system at each equilibrium point.</b>
@@ -585,13 +585,13 @@ In the pendulum example (with external torque), we have the A and B matrix avail
 ### Congratulations for making it to the end of subpart-1
 
 <p align = "center">
-    <img width = "500" height = "300" src = "eqns/image.png">
+    <img width = "300" height = "300" src = "eqns/image.png">
     <p align = "center">
 
 ## Task 1
 ### Rules of attempting the task:
 
-- [This]() is the PDF file contains 5 questions with a total of 100 points
+- [This](https://drive.google.com/file/d/1FE2hlQhfYbM2snSqgf_aZrtLcdeJhqMz/view?usp=sharing) is the PDF file contains 5 questions with a total of 100 points
 - It is mandatory to attempt each question
 - Ques 1-4 have weightage of 10 points each
 - Ques 5 is of 50 points and 6 is of 15 points
