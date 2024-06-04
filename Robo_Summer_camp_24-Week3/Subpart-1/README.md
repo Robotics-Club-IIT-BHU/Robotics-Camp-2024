@@ -405,3 +405,209 @@ The units and dimensions of α are rad/s^2 and [T^(-2) ] respectively.
 We know T=Iα (where T= torque, I = moment of inertia, α=angular acceleration) and I = m*L^2.
 
 (T/mL^2) equals angular acceleration α. Hence the last term is an angular acceleration term which is consistent with the equation. We can also calculate the dimensions of this term to verify. It will always come as [T^(-2) ]. This method is helpful to verify if or equations are valid.
+
+### Introduction to State Space Modelling
+We had briefly covered State Variables and State Equations in previous Task. In this section we will further elaborate on that topic and discuss the various control techniques that are associated with that.
+
+In control engineering, a state-space representation is a mathematical model of a physical system as a set of input, output and state variables related by first-order differential equations or difference equations. State variables are variables whose values evolve through time in a way that depends on the values they have at any given time and also depends on the externally imposed values of input variables. Output variables’ values depend on the values of the state variables.
+
+The state space equations for a linear time invariant system (LTI) system can be given as follows:
+<p align = "center">
+<img width = "1000" height = "60" src = "eqns/ssm.png">
+<p align = "center">
+
+Here
+
+x(t)- State Vector (n x 1 matrix)
+
+y(t)- Output Vector (p x 1 matrix)
+
+u(t)- Input Vector (m x 1 matrix)
+
+A - State (or system) matrix (n x n matrix)
+
+B - Input matrix (n x m matrix)
+
+C - Output Matrix (p x n matrix)
+
+D - Feed-forward matrix (p x m matrix)
+
+where p, m, n are:
+
+We won’t go into the theory of how these equations came into being. That’s a lot of complicated math that cannot be covered here. You can refer to good Control Systems books.
+
+Consider a set of equations:
+<p align = "center">
+<img width = "1000" height = "60" src = "eqns/ssm2.png">
+<p align = "center">
+
+We want to express this set of equations into the form
+<p align = "center">
+<img width = "1000" height = "60" src = "eqns/ssm3.png">
+<p align = "center">
+
+Notice, we have neglected the Bu term in this equation. That’s because our system doesn’t have any input. It only has state variables x₁ and x₂.
+
+Can we express the set of equations (1) in terms of (2)??
+
+The answer is no, we cannot. (1) is a set of non linear equations while (2) is a set of linear equations. However, if we linearize (1), it might be possible to express (1) in terms of (2).
+
+How do we linearize (1)? That was basically the whole point of previous Task.
+
+1. <b>Find the equilibrium points</b>
+
+    We want to find the point around which the system is stable. To find the equilibrium points we need to set ẋ₁ = 0 and ẋ₂=0. Then solve the equations for
+
+    x₁ and x₂.
+    <p align = "center">
+    <img width = "400" height = "100" src = "eqns/ssm4.png">
+    <p align = "center">
+
+    If we solve (3) for x₁ and x₂ we will get the equilibrium points as (0,0), (1,√2) and (1,-√2).
+2. <b> Calculate the jacobian of the system of equations</b>
+
+    The jacobian J for the system of equations (3) will be:
+    <p align = "center">
+    <img width = "1500" height = "180" src = "eqns/ssm5.png">
+    <p align = "center">
+3.  <b>Construct the state equation for each equilibrium point.</b>
+
+    The state equation for equilibrium point (0,0) will be:
+    <p align = "center">
+    <img width = "1800" height = "180" src = "eqns/ssm6.png">
+    <p align = "center">
+
+    Therefore the set of equations has been expressed in the form:
+
+    <p align = "center">
+    <img width = "500" height = "40" src = "eqns/ssm7.png">
+    <p align = "center">
+
+    It is very important to note that this approximation of the set of non-linear equations given in (3) will only hold true for point close to the equilibrium point (0,0).
+
+    This means that around the vicinity of the equilibrium point (0,0), the non-linear system will behave like a linear system and the state equation given above will hold true around the vicinity of that point.
+
+    Likewise, the state equations for equilibrium points (1,√2) and (1,-√2) are:
+    <p align = "center">
+    <img width = "1800" height = "180" src = "eqns/ssm8.png">
+    <p align = "center">
+
+### Stability
+
+We can find out whether the system is stable or unstable at each of the equilibrium points by finding out the eigenvalues of the A matrix. If any of the eigenvalues have a positive real part, the system will be unstable.
+
+So, for equilibrium point (1, √2) of the system, the eigenvalues will be -2.824 and 1.414. Hence system will be unstable.
+
+<b>Introducing Control Input</b>
+
+Let us consider the Pendulum with external applied torque system.
+
+We derived the equations for this system as:
+<p align = "center">
+    <img width = "1000" height = "90" src = "eqns/st1.png">
+    <p align = "center">
+
+We can apply the same linearization technique explained above.
+
+1. <b>Find the equilibrium points.</b>
+
+    If we set ẋ₁ = 0 and ẋ₂=0, we will find the equilibrium points of this system as (nπ,0) where n=0,±1,±2,… .From the physical descriptions of the pendulum, it is clear that there are only two equilibrium positions (0,0) and (π,0). The rest of equilibrium points are just repetitions based on number of full swings of the pendulum.
+
+    The equilibrium point (0,0) will be when the pendulum bob is vertically downwards.
+
+    The equilibrium point (π,0) will be when the pendulum bob is vertically upwards.
+
+    Intuitively, we can guess that the system will be stable at equilibrium point (0,0) and unstable at equilibrium point (π,0). Let us see if our intuition is correct.
+
+2. <b>Calculate the jacobian of the system of equations.</b>
+
+    The jacobian J₁ for the A matrix of the state equation will be:
+    <p align = "center">
+    <img width = "1800" height = "200" src = "eqns/st2.png">
+    <p align = "center">
+
+    Since our system has input, we also need to calculate jacobian J₂ for the B matrix.
+
+    J₂ will be:
+    <p align = "center">
+    <img width = "1800" height = "200" src = "eqns/st3.png">
+    <p align = "center">
+3. <b> For each equilibrium point, substitute value of (x₁,x₂) in the jacobian and calculate the A and B matrix.</b>
+
+    The values of A matrix for each equilibrium point will be given as:
+    <p align = "center">
+    <img width = "1800" height = "100" src = "eqns/st4.png">
+    <p align = "center">
+
+    The values of B matrix for all equilibrium points will be:
+    <p align = "center">
+    <img width = "1800" height = "80" src = "eqns/st5.png">
+    <p align = "center">
+
+4. <b>Construct the state equation for each equilibrium point.</b>
+
+    The state equation for equilibrium point (0,0) will be:
+    <p align = "center">
+    <img width = "1000" height = "100" src = "eqns/st6.png">
+    <p align = "center">
+
+5. <b>Check the stability of the system at each equilibrium point.</b>
+
+    At equilibrium point (0,0) the eigenvalues will be:
+    <p align = "center">
+    <img width = "500" height = "60" src = "eqns/st7.png">
+    <p align = "center">
+
+    The eigenvalues for (0,0) will be purely imaginary. Hence the system will be marginally stable. Marginally stable means that system will be continue to oscillate about the equilibrium point indefinitely.
+
+    The eigenvalues for (π,0) will be purely real. One of the eigenvalues will have positive real part. Hence the system will be unstable.
+
+    Hence we proved that our earlier intuitions about the stability of the system are correct. The system will be stable for (0,0) and unstable for (π,0).
+
+### Controllability and Observability
+
+In control theory, controllability and observability are two very important properties of the system.
+
+Controllability is the ability to drive a state from any initial value to a final value in finite amount of time by providing a suitable input. A matrix which determines if a system is fully controllable or not is called the controllability matrix.
+
+Observability is the property of the system that for any possible sequnce of state and control inputs, the current state can be determined in finite time using only the outputs. A matrix which determines if a system is fully observable or not is called the observability matrix. A fully observable system means that it is possible to know all the state variables from the system outputs.
+
+<p align = "center">
+    <img width = "1000" height = "600" src = "eqns/c1.png">
+    <p align = "center">
+
+Rank of a matrix is defines as the maximum number of linearly independent rows or columns in a matrix.
+
+In the pendulum example (with external torque), we have the A and B matrix available to us. Hence we can calculate the controllability of the system.
+
+[![Rank of a Matrix](https://img.youtube.com/vi/MxGJeli6qOc/0.jpg)](https://youtu.be/MxGJeli6qOc)
+
+### Congratulations for making it to the end of subpart-1
+
+<p align = "center">
+    <img width = "500" height = "300" src = "eqns/image.png">
+    <p align = "center">
+
+## Task 1
+### Rules of attempting the task:
+
+- [This]() is the PDF file contains 5 questions with a total of 100 points
+- It is mandatory to attempt each question
+- Ques 1-4 have weightage of 10 points each
+- Ques 5 is of 50 points and 6 is of 15 points
+- You have to submit the your solutions in PDF file
+- Answers to the questions can handwritten or typed
+- You can take help of MATLAB or any other software to verify your answers.
+- You can type the equations using Latex editor
+- Any relevant diagram related to the question is appreciated and will earn you bonus points.
+
+## References :
+
+<b>We Ignore it, but wikipedia is still one of the most powerful tools [Inverted pendulum](https://en.wikipedia.org/wiki/Inverted_pendulum)
+
+Most popular Rotary Inverted Pendulum around - you can find jackpot of papers on it [Rotary Inverted Pendulum](https://www.quanser.com/products/rotary-inverted-pendulum/)
+
+Did you know this Nickname ? [Furuta pendulum](https://en.wikipedia.org/wiki/Furuta_pendulum)
+
+You must be knowing Brian, don’t you?
+[check this out](https://www.youtube.com/playlist?list=PLfqhYmT4ggAtpuB1g8NbgH912PwYjn_We )</b>
