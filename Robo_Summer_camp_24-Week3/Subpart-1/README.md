@@ -573,7 +573,7 @@ Controllability is the ability to drive a state from any initial value to a fina
 Observability is the property of the system that for any possible sequnce of state and control inputs, the current state can be determined in finite time using only the outputs. A matrix which determines if a system is fully observable or not is called the observability matrix. A fully observable system means that it is possible to know all the state variables from the system outputs.
 
 <p align = "center">
-    <img width = "1000" height = "600" src = "eqns/c1.png">
+    <img width = "500" height = "600" src = "eqns/c1.png">
     <p align = "center">
 
 Rank of a matrix is defines as the maximum number of linearly independent rows or columns in a matrix.
