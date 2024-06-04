@@ -591,7 +591,7 @@ In the pendulum example (with external torque), we have the A and B matrix avail
 ## Task 1
 ### Rules of attempting the task:
 
-- [This](https://drive.google.com/file/d/1FE2hlQhfYbM2snSqgf_aZrtLcdeJhqMz/view?usp=sharing) is the PDF file contains 5 questions with a total of 100 points
+- [This](https://drive.google.com/file/d/1FE2hlQhfYbM2snSqgf_aZrtLcdeJhqMz/view?usp=sharing) is the PDF file contains 5 questions with a total of 105 points
 - It is mandatory to attempt each question
 - Ques 1-4 have weightage of 10 points each
 - Ques 5 is of 50 points and 6 is of 15 points
