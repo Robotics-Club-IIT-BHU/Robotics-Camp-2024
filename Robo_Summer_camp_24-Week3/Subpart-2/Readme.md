@@ -126,3 +126,5 @@ More mathematically PID is represented as
 
 2. This document by **National Programme on Technology Enhanced Learning** will help you get some great insights about PID. You can download it from [here](https://nptel.ac.in/content/storage2/courses/108105063/pdf/L-12(SS)%20(IA&C)%20((EE)NPTEL).pdf).
 3. You can read more about pid in the **blog by brettbeauregard** [here](http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/).
+
+[Task 2](/Robo_Summer_camp_24-Week3/Task-2/README.md)
