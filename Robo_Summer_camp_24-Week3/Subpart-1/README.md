@@ -181,7 +181,7 @@ Using the Newton’s second law of motion, the equation of motion for the bob in
 <img width = "150" height = "30" src = "eqns/pd1.png">
 </p>
 To obtain the State Equation for the pendulum, the state variables can be assumed as
-$x_1 = \theta, \quad x_2 = \dot{\theta}$
+ $ \x_1 = \theta, \quad x_2 = \dot{\theta}$ 
 The state equations for the pendulum model are:
 <p align = "center">
 <img width = "200" height = "80" src = "eqns/pd2.png">
