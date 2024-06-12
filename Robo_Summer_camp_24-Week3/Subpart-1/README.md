@@ -601,6 +601,8 @@ In the pendulum example (with external torque), we have the A and B matrix avail
 - You can type the equations using Latex editor
 - Any relevant diagram related to the question is appreciated and will earn you bonus points.
 
+##Submission Link: Click [here](https://forms.gle/eA5zo3Pd8qV7mzwz9)
+
 ## References :
 
 <b>We Ignore it, but wikipedia is still one of the most powerful tools [Inverted pendulum](https://en.wikipedia.org/wiki/Inverted_pendulum)
