@@ -136,3 +136,20 @@ We discussed 2D pooling here, go through this short video for a better visualisa
 <p align = "center">
   <img src="https://i.pinimg.com/originals/47/43/26/4743266e52354dc3bac5e25f23611317.gif">
 </p>
+
+# Task: MNIST Digit Prediction with Convolutional Neural Network
+
+This project aims to train a model that can take an MNIST data point and predict the digit written on it. The MNIST data point is a list of size 28x28 (flattened form of a 28x28 1D image). Use this Convolutional Neural Network (CNN) architecture with the following layer schema:
+
+## Layer Schema
+- **Input Layer**: 28x28x1
+- **Conv Layer 1**: 6 filters of size 5x5, stride = 1 → 24x24x6
+- **Activation Layer 1**: Leaky ReLU → 24x24x6
+- **Max Pooling Layer 1**: 2x2 fields, stride = 2 → 12x12x6
+- **Conv Layer 2**: 16 filters of size 5x5, stride = 1 → 8x8x16
+- **Activation Layer 2**: Leaky ReLU → 8x8x16
+- **Max Pooling Layer 2**: 2x2 fields, stride = 2 → 4x4x16
+- **Dense Layer**: Output size = 10
+
+
+[submission link](https://docs.google.com/forms/d/1tIRYTHHjNwuiiDcpK9TTwVK4qSVYqgyZr_ensBwryS4/edit)
