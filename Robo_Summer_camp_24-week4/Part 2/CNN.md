@@ -132,7 +132,7 @@ Average Pooling works in the same way as Max Pooling, it has more stride value c
 We discussed 2D pooling here, go through this short video for a better visualisation of 3D pooling. <a href="https://youtu.be/PuFNG721zM8">click here</a>
 <br>
 <br>
-<h3>Thus, you've learned all the basic elements needed to build a ConvNet. Move on to the next subpart to learn the implementation part.</h3>
+<h3>Thus, you've learned all the basic elements needed to build a ConvNet.</h3>
 <p align = "center">
   <img src="https://i.pinimg.com/originals/47/43/26/4743266e52354dc3bac5e25f23611317.gif">
 </p>
