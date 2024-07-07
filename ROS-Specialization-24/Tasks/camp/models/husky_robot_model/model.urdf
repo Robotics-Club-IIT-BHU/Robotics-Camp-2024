@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<robot name="husky_robot_model">
+
+  <joint name="husky_robot_model__front_left_wheel_joint" type="revolute">
+    <parent link="husky_robot_model__base_link"/>
+    <child link="husky_robot_model__front_left_wheel_link"/>
+    <origin rpy="0  0  0" xyz="0.256    0.2854   0.03282"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-1e+16" upper="1e+16" velocity="0.0"/>
+  </joint>
+  <joint name="husky_robot_model__front_right_wheel_joint" type="revolute">
+    <parent link="husky_robot_model__base_link"/>
+    <child link="husky_robot_model__front_right_wheel_link"/>
+    <origin rpy="0  0  0" xyz="0.256   -0.2854   0.03282"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-1e+16" upper="1e+16" velocity="0.0"/>
+  </joint>
+  <joint name="husky_robot_model__rear_left_wheel_joint" type="revolute">
+    <parent link="husky_robot_model__base_link"/>
+    <child link="husky_robot_model__rear_left_wheel_link"/>
+    <origin rpy="0  0  0" xyz="-0.256    0.2854   0.03282"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-1e+16" upper="1e+16" velocity="0.0"/>
+  </joint>
+  <joint name="husky_robot_model__rear_right_wheel_joint" type="revolute">
+    <parent link="husky_robot_model__base_link"/>
+    <child link="husky_robot_model__rear_right_wheel_link"/>
+    <origin rpy="0  0  0" xyz="-0.256   -0.2854   0.03282"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="0.0" lower="-1e+16" upper="1e+16" velocity="0.0"/>
+  </joint>
+  <joint name="husky_robot_model__pan_gimbal_joint" type="fixed">
+    <parent link="laser"/>
+    <child link="husky_robot_model__pan_gimbal_link"/>
+    <origin rpy="0  0  0" xyz="0 0 0.09"/>
+  </joint>
+  
+  <!-- Base Link -->
+  <link name="husky_robot_model__base_link">
+    <inertial>
+      <mass value="46.064"/>
+      <origin rpy="0  0  0" xyz="-0.00054 -0.08494  0.06232"/>
+      <inertia ixx="0.615397" ixy="-0.0240585" ixz="-0.120749" iyy="1.75388" iyz="-0.0028322" izz="2.03641"/>
+    </inertial>
+    <collision name="husky_robot_model__base_link_collision">
+      <origin rpy="0  0  0" xyz="0    0    0.12"/>
+      <geometry>
+        <box size="0.9874 0.5709 0.05"/>
+      </geometry>
+    </collision>
+    <collision name="husky_robot_model__base_link_collision_bottom">
+      <origin rpy="0  0  0" xyz="0     0     0.046"/>
+      <geometry>
+        <box size="0.80 0.5709 0.095"/>
+      </geometry>
+    </collision>
+    <collision name="husky_robot_model__base_link_collision_1">
+      <origin rpy="0  0  0" xyz="0       0       0.18562"/>
+      <geometry>
+        <box size="0.78992 0.5709 0.12375"/>
+      </geometry>
+    </collision>
+    <collision name="husky_robot_model__base_link_fixed_joint_lump__camera/camera_link_collision_1">
+      <origin rpy="0  0  0" xyz="0    0    0.05"/>
+      <geometry>
+        <box size="0.0078 0.13 0.0192"/>
+      </geometry>
+    </collision>
+    <collision name="husky_robot_model__base_link_fixed_joint_lump__sensor_tower_8">
+      <origin rpy="0  0  0" xyz="0.374  0     0.215"/>
+      <geometry>
+        <box size="0.2 0.25 0.225"/>
+      </geometry>
+    </collision>
+    <collision name="husky_robot_model__base_link_fixed_joint_lump__computer_block_9">
+      <origin rpy="0  0  0" xyz="0.05   0     0.185"/>
+      <geometry>
+        <box size="0.30 0.355 0.175"/>
+      </geometry>
+    </collision>
+    <visual name="husky_robot_model__base_link_visual">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/base_link.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__front_bumper_link_visual_3">
+      <origin rpy="0  0  0" xyz="0.48   0     0.091"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/bumper.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__rear_bumper_link_visual_4">
+      <origin rpy="0       0       3.14159" xyz="-0.48   0     0.091"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/bumper.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__top_chassis_link_visual_5">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/top_chassis.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__user_rail_link_visual_13">
+      <origin rpy="0  0  0" xyz="0.272  0     0.245"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/user_rail.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__sensor_tower_16">
+      <origin rpy="0  0  0" xyz="0.374  0     0.215"/>
+      <geometry>
+        <box size="0.2 0.25 0.225"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__computer_block_17">
+      <origin rpy="0  0  0" xyz="0.05   0     0.185"/>
+      <geometry>
+        <box size="0.30 0.355 0.175"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="husky_robot_model__front_left_wheel_link">
+    <inertial>
+      <mass value="2.637"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.04411" iyz="0" izz="0.02467"/>
+    </inertial>
+    <collision name="husky_robot_model__front_left_wheel_link_collision">
+      <origin rpy="1.57079  0       0" xyz="0  0  0"/>
+      <geometry>
+        <cylinder length="0.1143" radius="0.1651"/>
+      </geometry>
+    </collision>
+    <visual name="husky_robot_model__front_left_wheel_link_visual">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/wheel.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="husky_robot_model__front_right_wheel_link">
+    <inertial>
+      <mass value="2.637"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.04411" iyz="0" izz="0.02467"/>
+    </inertial>
+    <collision name="husky_robot_model__front_right_wheel_link_collision">
+      <origin rpy="1.57079  0       0" xyz="0  0  0"/>
+      <geometry>
+        <cylinder length="0.1143" radius="0.1651"/>
+      </geometry>
+    </collision>
+    <visual name="husky_robot_model__front_right_wheel_link_visual">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/wheel.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="husky_robot_model__rear_left_wheel_link">
+    <inertial>
+      <mass value="2.637"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.04411" iyz="0" izz="0.02467"/>
+    </inertial>
+    <collision name="husky_robot_model__rear_left_wheel_link_collision">
+      <origin rpy="1.57079  0       0" xyz="0  0  0"/>
+      <geometry>
+        <cylinder length="0.1143" radius="0.1651"/>
+      </geometry>
+    </collision>
+    <visual name="husky_robot_model__rear_left_wheel_link_visual">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/wheel.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="husky_robot_model__rear_right_wheel_link">
+    <inertial>
+      <mass value="2.637"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0.02467" ixy="0" ixz="0" iyy="0.04411" iyz="0" izz="0.02467"/>
+    </inertial>
+    <collision name="husky_robot_model__rear_right_wheel_link_collision">
+      <origin rpy="1.57079  0       0" xyz="0  0  0"/>
+      <geometry>
+        <cylinder length="0.1143" radius="0.1651"/>
+      </geometry>
+    </collision>
+    <visual name="husky_robot_model__rear_right_wheel_link_visual">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/wheel.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="husky_robot_model__pan_gimbal_link">
+    <inertial>
+      <mass value="0.1"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0.000016875" ixy="0" ixz="0" iyy="0.00000001" iyz="0" izz="0.000016875"/>
+    </inertial>
+    <collision name="husky_robot_model__pan_gimbal_link_collision">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <cylinder length="0.045" radius="0.014"/>
+      </geometry>
+    </collision>
+    <visual name="husky_robot_model__pan_gimbal_link_visual">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <cylinder length="0.5" radius="0.014"/>
+      </geometry>
+    </visual>
+  </link>
+  
+
+<!-- LIDAR -->
+  <link name="laser">
+    <inertial>
+      <mass value="0.09"/>
+      <inertia ixx="4.275e-05" ixy="0" ixz="0" iyy="4.275e-05" iyz="0" izz="5.5125e-05"/>
+    </inertial>
+    <collision name="husky_robot_model__base_link_fixed_joint_lump__velodyne_base_link_collision_6">
+      <origin rpy="0  0  0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.0717" radius="0.0516"/>
+      </geometry>
+    </collision>
+    <collision name="husky_robot_model__base_link_fixed_joint_lump__velodyne_gimbal_plate_base_link_collision_7">
+      <origin rpy="0  0  0" xyz="0 0 0.0717"/>
+      <geometry>
+        <box size="0.1 0.1 0.01"/>
+      </geometry>
+    </collision>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__velodyne_base_link_visual_10">
+      <origin rpy="0  0  0" xyz="0  0     0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/VLP16_base_1.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__velodyne_base_link_visual_11">
+      <origin rpy="0  0  0" xyz="0  0     0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/VLP16_base_2.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__velodyne_visual_12">
+      <origin rpy="0  0  0" xyz="0  0     0"/>
+      <geometry>
+        <mesh filename="package://camp/models/husky_robot_model/meshes/VLP16_scan.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="husky_robot_model__base_link_fixed_joint_lump__velodyne_gimbal_plate_15">
+      <origin rpy="0  0  0" xyz="0 0 0.0717"/>
+      <geometry>
+        <box size="0.06 0.06 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="rplidar_joint" type="fixed">
+    <origin xyz="0.424 0 0.327" rpy="0 0 0" />
+    <parent link="husky_robot_model__base_link"/>
+    <child link="laser"/>
+  </joint>
+
+<!-- Gazebo Plugins -->
+
+  <!-- Skid steer drive plugin -->
+  
+
+</robot>

@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+<!-- Sun -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+<!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+<!-- Empty World 1 -->
+    <include>
+      <uri>model://world1</uri>
+      <pose>0 0 0 0 0 0</pose>
+      <static>true</static>
+    </include>
+
+<!-- Tables -->
+    <model name='Table1'>
+      <include>
+        <uri>model://table</uri>
+        <pose>-11 6 0 0 0 0</pose>
+        <static>true</static>
+      </include>
+    </model>
+    <model name='Table2'>
+      <include>
+        <uri>model://table</uri>
+        <pose>-9 6 0 0 0 0</pose>
+        <static>true</static>
+      </include>
+    </model>
+    <model name='Table3'>
+      <include>
+        <uri>model://table</uri>
+        <pose>-7 6 0 0 0 0</pose>
+        <static>true</static>
+      </include>
+    </model>
+    <model name='Table4'>
+      <include>
+        <uri>model://table</uri>
+        <pose>-5 6 0 0 0 0</pose>
+        <static>true</static>
+      </include>
+    </model>
+    <model name='Table5'>
+      <include>
+        <uri>model://table</uri>
+        <pose>-3 6 0 0 0 0</pose>
+        <static>true</static>
+      </include>
+    </model>
+
+  <!-- Colored Boxes -->
+    <include>
+      <uri>model://box_red</uri>
+      <pose>-11 6 1.5 0 0 0</pose>
+      <static>false</static>
+    </include>
+    <include>
+      <uri>model://box_yellow</uri>
+      <pose>-9 6 1.5 0 0 0</pose>
+      <static>false</static>
+    </include>
+    <include>
+      <uri>model://box_blue</uri>
+      <pose>-7 6 1.5 0 0 0</pose>
+      <static>false</static>
+    </include>
+    <include>
+      <uri>model://box_green</uri>
+      <pose>-5 6 1.5 0 0 0</pose>
+      <static>false</static>
+    </include>
+    <include>
+      <uri>model://box_purple</uri>
+      <pose>-3 6 1.5 0 0 0</pose>
+      <static>false</static>
+    </include>
+
+  <!-- Balls -->
+  <model name='Ball1'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>1.16 -4.72 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+  <model name='Ball2'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>1.02 -5.73 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+  <model name='Ball3'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>-4.89 -6.45 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+  <model name='Ball4'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>-4.66 -7.86 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+
+  <model name='Ball5'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>0.89 3.98 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+  <model name='Ball6'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>1.02 5.8 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+  <model name='Ball7'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>1.7 6.63 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+  <model name='Ball8'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>2.5 7.35 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+  <model name='Ball9'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>4.14 6.1 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+  <model name='Ball10'>
+    <include>
+      <uri>model://ball_pink</uri>
+      <pose>2.89 4.63 0.4 0 0 0</pose>
+      <static>true</static>
+    </include>
+  </model>
+
+  </world>
+</sdf>

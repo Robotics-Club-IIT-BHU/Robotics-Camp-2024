@@ -1,0 +1,12 @@
+<launch>
+
+  <param name="robot_description" command="cat '$(find camp)/models/husky_robot_model/model.urdf'"/>
+
+  <!-- Joint state publisher -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+  <!-- Robot state publisher -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+
+  <node name="rviz" pkg="rviz" type="rviz"/>
+</launch>
