@@ -1,10 +1,11 @@
+# Final Task
 
 Your final tasks will be based on the ONNX model. 
 Here we have attached 10 images in task/images folder and one `yolo.onnx` model.
 
-=> The yolo.onnx model is downloaded from [here](https://github.com/onnx/models/tree/main/validated/vision/object_detection_segmentation/tiny-yolov2)
-=> Open this yolo.onnx in [Netron](https://netron.app/) and see its internal structure(this is the power of onnx)
-=> You can refer to [this article](https://machinethink.net/blog/object-detection-with-yolo/) to know how is yolo.onnx model is behaving.
+* The yolo.onnx model is downloaded from [here](https://github.com/onnx/models/tree/main/validated/vision/object_detection_segmentation/tiny-yolov2)
+* Open this yolo.onnx in [Netron](https://netron.app/) and see its internal structure(this is the power of onnx)
+* You can refer to [this article](https://machinethink.net/blog/object-detection-with-yolo/) to know how is yolo.onnx model is behaving.
 
 ### Task
 1. Load the `yolo.onnx` model in ONNX Runtime and give it a rough input to ensure it produces the expected output shape of `(13, 13, 125)`.

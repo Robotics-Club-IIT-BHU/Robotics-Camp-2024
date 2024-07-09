@@ -2,7 +2,7 @@
 # Computer-Vision Specialization
 
 <div align="center">
-    <img src="media/welcome.webp" height="60%" width="60%">
+    <img src="media/welcome.webp">
   <br>
 </div>
 
