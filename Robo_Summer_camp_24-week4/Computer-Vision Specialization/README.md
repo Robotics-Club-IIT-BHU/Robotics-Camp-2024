@@ -1,5 +1,12 @@
 
-![[welcome.webp]]
+# Computer-Vision Specialization
+
+<div align="center">
+    <img src="media/welcome.webp" height="70%" width="70%">
+  <br>
+</div>
+
+
 In this specialization, we will emphasize how to use pretrained models and discuss current trends in computer vision.
 
 Topics that we will be covering in the specialization include:
