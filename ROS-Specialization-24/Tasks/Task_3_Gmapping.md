@@ -52,12 +52,12 @@
   </include>
 
 <!-- Coordinates of bot which we need to spawn -->
-    <arg name="x" default="0"/>
-    <arg name="y" default="0"/>
+    <arg name="x" default="-8"/>
+    <arg name="y" default="8"/>
     <arg name="z" default="0"/>
     <arg name="roll" value="0.0"/>
     <arg name="pitch" value="0.0"/>
-    <arg name="yaw" value="1.57"/>
+    <arg name="yaw" value="0.0"/>
     
     <!-- Calling spawing node to spawn our robot in gazebo -->
    <node name="husky_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" 
