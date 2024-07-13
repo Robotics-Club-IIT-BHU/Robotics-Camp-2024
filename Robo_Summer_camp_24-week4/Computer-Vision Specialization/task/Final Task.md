@@ -19,3 +19,6 @@ Here we have attached 10 images in task/images folder and one `yolo.onnx` model.
 	- Returns a list of objects present in the image.
 
 Completing this task will primarily require knowledge from sections 1 and 2. Other sections are included to give you a broader view of other computer vision domains, and we may ask questions from these sections during the final recruitment interview process.
+
+#Submission link
+[click here](https://docs.google.com/forms/d/e/1FAIpQLSezOpvXZbGRDpY-LNUqbmz4ECWT4ygr0W7Qo16kQ4gy47gtdw/viewform?usp=sf_link)
